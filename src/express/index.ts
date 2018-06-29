@@ -4,7 +4,7 @@ const port = 8000
 const app = express()
 
 app.get('/', function (req, res) {
-  res.send('YOLO WORLD')
+  res.send('test')
 })
 
 app.listen(port, function () {

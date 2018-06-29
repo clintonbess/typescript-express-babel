@@ -14,13 +14,24 @@ const devConfig = {
   module: {
     rules: [
       {
-        test: /\.(tsx?)|(js)$/,
-        exclude: /(node_modules)/,
-        use: {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: [{
           loader: 'babel-loader'
-        }
+        }]
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: [{
+          loader: 'babel-loader'
+        }]
       }
-    ]
+    ],
+    resolve: {
+      root: [path.resolve('./src')],
+      extensions: ['', '.js', '.jsx', '.ts', '.tsx']
+    }
   }
 }
 
