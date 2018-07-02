@@ -27,11 +27,11 @@ const devConfig = {
           loader: 'babel-loader'
         }]
       }
-    ],
-    resolve: {
-      root: [path.resolve('./src')],
-      extensions: ['', '.js', '.jsx', '.ts', '.tsx']
-    }
+    ]
+    // resolve: {
+    //   root: [path.resolve('./src')],
+    //   extensions: ['', '.js', '.jsx', '.ts', '.tsx']
+    // }
   }
 }
 

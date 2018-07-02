@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack --config webpack.dev.js",
-    "build": "babel src -d dist",
+    "build": "babel src --out-dir dist --extensions \".ts,.tsx\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Clinton Bess",
@@ -15,6 +15,9 @@
     "@babel/core": "^7.0.0-beta.51",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
     "@babel/preset-typescript": "^7.0.0-beta.51",
+    "@types/express": "github:types/express",
+    "@types/node": "^10.5.1",
+    "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-node6": "^11.0.0",
