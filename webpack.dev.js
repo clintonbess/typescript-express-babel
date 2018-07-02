@@ -28,10 +28,6 @@ const devConfig = {
         }]
       }
     ]
-    // resolve: {
-    //   root: [path.resolve('./src')],
-    //   extensions: ['', '.js', '.jsx', '.ts', '.tsx']
-    // }
   }
 }
 
